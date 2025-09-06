@@ -72,7 +72,7 @@ class ResearchTools:
         Try to parse LLM response as JSON, return dict or error info
         """
         try:
-            # Find JSON in the response (sometimes LLM includes extra text)
+            
             start_idx = response.find('{')
             end_idx = response.rfind('}') + 1
             

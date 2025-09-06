@@ -83,7 +83,7 @@ class ResearchAssistantAgent:
         Returns:
             Dict[str, Any]: Final state with research results
         """
-        print(f"\n🔍 Starting research on: {topic}")
+        print(f"\nStarting research on: {topic}")
         print("=" * 60)
         
         # Initialize state
@@ -107,13 +107,13 @@ class ResearchAssistantAgent:
             with open("workflow.png", "wb") as f:
                 f.write(png_data)
             
-            print("\n✅ Research completed successfully!")
+            print("\nResearch completed successfully!")
             print("=" * 60)
             
             return final_state
             
         except Exception as e:
-            print(f"\n❌ Research failed: {str(e)}")
+            print(f"\nResearch failed: {str(e)}")
             return {"error": str(e)}
 
 
@@ -140,16 +140,16 @@ class ResearchAssistantAgent:
             research_result (Dict[str, Any]): Result from research() method
         """
         if "error" in research_result:
-            print(f"❌ Research failed: {research_result['error']}")
+            print(f"Research failed: {research_result['error']}")
             return
         
-        print("\n📊 RESEARCH SUMMARY")
+        print("\nRESEARCH SUMMARY")
         print("=" * 40)
         print(f"Topic: {research_result.get('topic', 'Unknown')}")
         print(f"Iterations: {research_result.get('iteration_count', 0)}")
         print(f"Queries executed: {len(research_result.get('search_queries', []))}")
         print(f"Sources analyzed: {len(research_result.get('analyzed_content', []))}")
-        print(f"Report generated: {'✅' if research_result.get('final_report') else '❌'}")
+        print(f"Report generated: {'' if research_result.get('final_report') else '❌'}")
         
         # Show queries used
         if research_result.get('search_queries'):
