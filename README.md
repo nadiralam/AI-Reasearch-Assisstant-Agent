@@ -1,8 +1,8 @@
-# Research Assistant Agent 🤖
+# Research Assistant Agent 
 
 A powerful AI-powered research assistant built with **LangChain** and **LangGraph** that automatically conducts comprehensive research on any topic and generates detailed reports.
 
-## 🌟 Features
+##  Features
 
 - **Intelligent Query Planning**: Automatically generates focused search queries
 - **Multi-Source Research**: Searches the web using DuckDuckGo
@@ -11,7 +11,7 @@ A powerful AI-powered research assistant built with **LangChain** and **LangGrap
 - **Report Generation**: Creates structured, professional research reports
 - **Conditional Routing**: Smart decision-making for when to continue or complete research
 
-## 🏗️ Architecture
+##  Architecture
 
 The agent uses LangGraph to orchestrate the research workflow:
 
@@ -25,7 +25,7 @@ start → plan_queries → search → analyze → synthesize
                                     generate_report → end
 ```
 
-## 📁 Project Structure
+##  Project Structure
 
 ```
 research_assistant_agent/
@@ -44,7 +44,7 @@ research_assistant_agent/
     └── reports/                # Generated reports
 ```
 
-## 🚀 Quick Start
+##  Quick Start
 
 ### 1. Clone and Setup
 
@@ -79,7 +79,7 @@ python setup_check.py
 python main.py
 ```
 
-## 📖 Usage
+##  Usage
 
 ### Interactive Mode
 
@@ -116,7 +116,7 @@ The agent generates comprehensive reports with:
 
 Reports are automatically saved to `outputs/reports/` with timestamps.
 
-## 🧠 How It Works
+##  How It Works
 
 ### 1. Query Planning
 - Analyzes the research topic
@@ -146,7 +146,7 @@ Reports are automatically saved to `outputs/reports/` with timestamps.
 - Provides actionable insights
 - Lists all referenced sources
 
-## ⚙️ Configuration
+##  Configuration
 
 ### Environment Variables
 
@@ -168,7 +168,7 @@ You can modify the behavior by editing:
 - **nodes.py**: Modify the research logic and decision-making
 - **tools.py**: Add new search tools or change LLM settings
 
-## 📊 Research Quality
+##  Research Quality
 
 The agent automatically evaluates research quality based on:
 - **Information Coverage**: Breadth of topics covered
@@ -200,7 +200,7 @@ python setup_check.py
 3. **Custom Routing**: Update decision logic in `nodes.py`
 4. **New Report Formats**: Extend `report_generator` function
 
-## 🔍 Example Research Topics
+##  Example Research Topics
 
 Try these topics to see the agent in action:
 
@@ -219,14 +219,14 @@ Try these topics to see the agent in action:
 - "Breakthrough in renewable energy storage"
 - "Advances in cancer immunotherapy"
 
-## 📈 Performance Tips
+##  Performance Tips
 
 - **API Costs**: Uses GPT-4o-mini for cost efficiency
 - **Rate Limits**: Built-in delays between API calls
 - **Caching**: Stores search results to avoid redundant queries
 - **Error Handling**: Graceful failure recovery
 
-## 🤝 Contributing
+##  Contributing
 
 1. Fork the repository
 2. Create a feature branch
@@ -234,11 +234,11 @@ Try these topics to see the agent in action:
 4. Add tests if applicable
 5. Submit a pull request
 
-## 📝 License
+##  License
 
 This project is licensed under the MIT License.
 
-## 🆘 Troubleshooting
+##  Troubleshooting
 
 ### Common Issues
 
@@ -266,7 +266,7 @@ Search failed: connection error
 2. Check the generated logs in `outputs/logs/`
 3. Review example usage in `examples/basic_example.py`
 
-## 🎯 Future Enhancements
+##  Future Enhancements
 
 - [ ] Support for academic paper search
 - [ ] Multi-language research capabilities
@@ -278,6 +278,6 @@ Search failed: connection error
 
 ---
 
-**Built with ❤️ using LangChain and LangGraph**
+**Built with  using LangChain and LangGraph**
 
-*Happy Researching! 🔍📚*
+*Happy Researching! 
