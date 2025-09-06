@@ -1,5 +1,5 @@
 """
-Basic example of using the Research Assistant Agent
+Basic example of using the Research Assistant Agents
 """
 
 import sys
