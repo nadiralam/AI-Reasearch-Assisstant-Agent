@@ -1,5 +1,5 @@
 """
-Prompt templates for the Research Assistant Agent
+Prompt templates for the AI Research Assistant Agent
 """
 
 QUERY_PLANNING_PROMPT = """
